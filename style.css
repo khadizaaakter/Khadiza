@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "sans-serif";
+  }
+  
+  .wrapper {
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .name-logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6001d3;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .links a {
+    color: #6001d3; /* Initial text color */
+    text-decoration: none;
+    padding: 8px 16px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: linear-gradient(to right, #6001d3, #8a2be2); /* Gradient background */
+    transition: width 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .links a:hover::after {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to right, #8a2be2, #6001d3); /* Reversed gradient background on hover */
+  }
+  
+  .links a:hover {
+    color: #8a2be2;
+    transform: scale(1.1); 
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced text shadow */
+  }
+  
+  
+  
+  .btn-contact button {
+    padding: 17px 34px;
+    background: linear-gradient(45deg, #6001d3, #a750f8);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.4s linear, background-color 0.4s linear, transform 0.3s ease;
+    border: none;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-contact button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.75s ease;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  
+  .btn-contact button:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .btn-contact button:hover {
+    color: white;
+    background: linear-gradient(45deg, #a45ae9, #6001d3);
+    transform: scale(1.05);
+  }
+  
+  .btn-contact button span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-contact button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
