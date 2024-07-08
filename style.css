@@ -44,11 +44,12 @@
 }
 
 .links a {
-  color: #6001d3;
+  color: #06000c;
+  font-weight: 600;
   text-decoration: none;
   padding: 8px 16px;
   position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0s ease; /* Change transition duration for transform to 0s */
 }
 
 .links a::after {
@@ -60,7 +61,7 @@
   margin-top: 5px;
   right: 0;
   background: linear-gradient(to right, #6001d3, #8a2be2);
-  transition: width 0.3s ease, background-color 0.3s ease;
+  transition: width 0s ease, background-color 0.3s ease;
   -webkit-transition: width 0.3s ease, background-color 0.3s ease;
 }
 
@@ -73,8 +74,9 @@
 .links a:hover {
   color: #8a2be2;
   transform: scale(1.1);
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0;
 }
+
 
 .btn-contact button {
   padding: 17px 34px;
@@ -137,29 +139,31 @@
 }
 
 .small-title p {
-  font-size: 1.1em;
+  font-size: 0.9em;
+  font-weight: 600;
   color: #333;
   margin: 15px 0;
   text-align: left;
   text-transform: uppercase;
   line-height: 1.5; 
-  background: linear-gradient(90deg, #764BA2, #667EEA); 
+  background: linear-gradient(90deg, #592c87, #667EEA); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
 .greetings p {
-  font-size: 1em;
-  color: #555;
+  font-size: 1.6em;
+  color: #070000;
   margin: 5px 0;
   text-align: left;
+  font-weight: 600;
 }
 
 .greetings-name {
-  font-size: 1.5em;
+  font-size: 2.7em;
   font-weight: bold;
-  color: #222;
+  color: #080000;
   text-align: left;
   margin: 5px 0;
 }
