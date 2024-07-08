@@ -9,7 +9,7 @@
     width: 100%;
     background-color: #fff;
     height: 100vh;
-    padding: 10px;
+    padding: 2px;
   }
   
   .container {
@@ -21,11 +21,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 45px;
   }
   
   .name-logo {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     color: #6001d3;
   }
@@ -119,6 +119,16 @@
     transform: scale(0.98);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   }
+
+.titles{
+  display: inline-table;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 45px ;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
   .small-title p {
     font-size: 1.2em;
     color: #333;
@@ -130,14 +140,14 @@
     font-size: 1em;
     color: #555;
     margin: 5px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .greetings-name {
     font-size: 1.5em;
     font-weight: bold;
     color: #222;
-    text-align: center;
+    text-align: left;
     margin: 5px 0;
 }
 
@@ -145,5 +155,5 @@
     font-size: 1em;
     color: #777;
     margin: 5px 0;
-    text-align: center;
+    text-align: left;
 }
